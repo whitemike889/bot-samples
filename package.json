@@ -1,7 +1,7 @@
 {
-  "name": "extension-configuration-starter",
+  "name": "bot-samples",
   "version": "0.0.0",
-  "description": "Starter Kit for Extension Configurations",
+  "description": "Bot Samples",
   "scripts": {
     "rimraf": "rimraf",
     "tslint": "tslint",
