@@ -1,6 +1,6 @@
-# Extension Configuration Starter
+# Bot Samples
 
-> Starter Kit used to generate a Bullhorn Extension configuration
+> Bot Samples
 
 ## Usage
 
