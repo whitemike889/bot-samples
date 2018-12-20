@@ -1,6 +1,6 @@
 const {
   SLACK_WEBHOOK_URL
-} = require('./config.json');
+} = require('./configuration.json');
 const {
   IncomingWebhook
 } = require('@slack/client');

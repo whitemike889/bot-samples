@@ -40,7 +40,7 @@ This tutorial demonstrates using Cloud Functions to recieve data events from Bul
 
    ```cd ./functions/gcf-slack ```
 
-2. Modify the config.json file in the gcf_slack directory and replace [YOUR_SLACK_WEBHOOK_URL] 
+2. Modify the configuration.json file in the gcf_slack directory and replace [YOUR_SLACK_WEBHOOK_URL] 
    with the webhook url provided by Slack in the Basic information page of your app configuration.
 
 
