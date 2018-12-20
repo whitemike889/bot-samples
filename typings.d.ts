@@ -1,3 +1,41 @@
+interface BotOutcome {
+  outcomeType: 'UPDATEENTITY' | 'ADDTASK' | 'SENDEMAIL' | 'WEBHOOK';
+}
+
+interface BotOutcomeWebhook extends BotOutcome {
+  outcomeType: 'WEBHOOK';
+  url: string;
+  httpMethod: 'GET' | 'PUT' | 'POST' | 'DELETE';
+  queryParams?: any;
+}
+
+interface BotOutcomeUpdateEntity extends BotOutcome {
+  outcomeType: 'UPDATEENTITY';
+  entity: string
+  data: any;
+}
+
+interface BotCondition {
+  entity: string;
+  field: string;
+  matchOperator: 'LIKE' | 'CONTAINS' | 'DOESNOTCONTAIN' | 'EQUALS' | 'NOTEQUALS' | 'BEGINWITH' | 'ENDSWITH' | 'ISNOTEMPTY' | 'ISEMPTY' | 'ISGREATERTHAN' | 'ISLESSTHAN' | 'ISUPDATED';
+  value?: any
+}
+interface BotConditionData {
+  botConditions: BotCondition[];
+  logicOperator?: 'AND' | 'OR';
+}
+
+interface Bot {
+  name: string;
+  botType: 'POSTSAVE' | 'VALIDATION' | 'SCHEDULED';
+  isEnabled: boolean;
+  onUpdate: boolean;
+  entity: string;
+  botConditionData: BotConditionData;
+  botOutcomes: (BotOutcomeWebhook | BotOutcomeUpdateEntity)[];
+}
+
 interface PageInteraction {
   action: 'tab-modify' | 'action-modify' | 'overview-field-modify' | 'workflow-modify' | 'activity-section-modify';
   enabled?: boolean;

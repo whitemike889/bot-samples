@@ -1,0 +1,31 @@
+{
+  "name": "bullhorn-functions-adp",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "Bullhorn",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bullhorn/bot-samples.git"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "2.1.0"
+  },
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
+}

@@ -1,6 +1,9 @@
 {
   "name": "BotSamples",
   "bots": [
-    "./dist/bots/placement/slack-placement.js"
+    "./dist/bots/placement/placement-dateEnd.js",
+    "./dist/bots/placement/placement-approved.js",
+    "./dist/bots/placement/placement-adp.js",
+    "./dist/bots/job/job-close.js"
   ]
 }
